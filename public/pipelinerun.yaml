@@ -2,6 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
   name: buildpacks-test-pipeline-run
+  namespace: default
 spec:
   serviceAccountName: buildpacks-service-account # Only needed if you set up authorization
   pipelineRef:
